@@ -295,9 +295,11 @@ footer h3 {
 /* Estilo dos PRoDUCT*/
 .product_item{
 	padding: 10px;
+	border:1px solid #FFF;
 }
 .product_item:hover {
-	background-color: #EEE;
+	border:1px solid #EEE;
+	background-color: #FFFAFA
 }
 .product_item a {
 	text-decoration: none;
@@ -308,27 +310,30 @@ footer h3 {
 }
 .product_tag {
 	height: 30px;
+	border-radius: 50%; 
 	line-height: 30px;
-	padding: 0 5px;
+	padding: 0 7px;
 	float: left;
 	clear: both;
 	margin-top: 5px;
 	margin-left: 5px;
 	color: #FFF;
+	font-weight:bold;
+	text-transform: uppercase;
 }
 .product_tag_red{
-	background-color: #FF0000
+	background-color: #F8484A;
 }
 .product_tag_green {
-	background-color: #00FF00;
+	background-color: #59B210;
 }
 .product_tag_blue{
-	background-color: #0000FF;
+	background-color: #407AC5;
 }
 
 .product_name{
 	font-weight: bold;
-	color: #0000FF;
+	color: #0E53A5;
 	text-align: center;
 }
 
@@ -348,4 +353,27 @@ footer h3 {
 	font-weight:bold;
 	float: right;
 	margin-top: 15px;
+}
+
+/* Paginação*/
+.paginationArea {
+	margin-top: 30px;
+}
+.paginationItem { 
+	width: 40px;
+	height: 40px;
+	border:1px solid #DDD;
+	font-size: 13px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+}
+.paginationItem:hover,
+.pag_active {
+	border:1px solid #59B210;
+}
+.paginationItem a {
+	display: block;
+	color: #000;
+	text-decoration: none;
 }
